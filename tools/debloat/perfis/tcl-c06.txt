@@ -1,0 +1,20 @@
+# TCL C06 (Android TV 11, build AR2101, 918 MB). Testado em 25/10/2026: boot, Wi-Fi, TV aberta e 3 HDMI ok.
+# Um pacote por linha; '#' comenta. O Free My TV já desliga a lista da TCL do HomeMode.DEBLOAT, e mais:
+# tvlauncher, backdrop, tvrecommendations, Google TV (videos), Stan e Rakuten TV.
+
+# --- Seguros: promo, telemetria ou recurso sem uso numa TV
+android.autoinstalls.config.tcl.device   # Play Auto Install: empurra apps "recomendados" da TCL pela Play Store
+com.tcl.smartalexa                       # integração com Alexa da TCL
+com.google.android.feedback              # envio de relatórios de feedback ao Google
+com.android.printspooler                 # serviço de impressão
+com.android.dreams.basic                 # protetores de tela básicos do AOSP (o do Free My TV fica)
+
+# --- Opcionais: só descomente se não usar
+com.google.android.katniss               # Google Assistant (~16 MB de RAM); o botão do microfone para de funcionar
+# com.google.android.marvin.talkback     # TalkBack (leitor de tela para acessibilidade)
+# com.amazon.amazonvideo.livingroom      # Prime Video
+# com.netflix.ninja                      # Netflix
+# com.tcl.ui_mediaCenter                 # central de mídia USB da TCL (com os players abaixo)
+# com.tcl.videoplayer
+# com.tcl.imageplayer
+# com.tcl.audioplayer

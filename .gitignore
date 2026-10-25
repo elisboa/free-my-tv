@@ -17,3 +17,6 @@ __pycache__/
 # macOS
 .DS_Store
 tools/.i18n-cache.json
+
+# tools/debloat: what the inventory read from your TV
+tools/debloat/out/
