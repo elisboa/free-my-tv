@@ -5,8 +5,9 @@
 # (tvlauncher), tvrecommendations e backdrop. Stan e Rakuten TV já vêm desligados de fábrica.
 #
 # Notas desta TV:
-# - Parear Bluetooth novo (controle, teclado): troque para o Original antes. Com o serviço de teclas do Free My TV
-#   ativo, o OK do controle remoto não confirma a janela de pareamento. Pareado, volte ao Free My TV.
+# - Parear Bluetooth novo (controle, teclado): a janela de pareamento ignora o OK enquanto a tela de fábrica
+#   (tvlauncher) está desligada. Use `TV=<ip> ./tools/debloat/6-parear-bluetooth.sh`: liga a tela de fábrica só
+#   durante o pareamento, sem trocar a tela inicial, e a desliga de novo. (Ou pareie no Original.)
 # - Para conferir o modo de espera: Power, 1 min, ligar; `uptime` deve continuar subindo e
 #   `getprop persist.tcl.totalstrtimes` aumentar. Uptime de 0-2 min = a TV reiniciou em vez de acordar.
 

@@ -17,6 +17,7 @@ Cada TV tem um **perfil** em `perfis/` (a marca e o modelo ficam no perfil, não
 | Desfazer tudo | `TV=<ip> ./tools/debloat/9-reverter.sh` | Religa |
 | Diagnosticar entrada | `TV=<ip> ./tools/debloat/4-diagnostico-entrada.sh` (teclado, controle, Bluetooth) | Não |
 | Diagnosticar USB | `TV=<ip> ./tools/debloat/5-diagnostico-usb.sh` (porta por porta) | Não |
+| Parear Bluetooth | `TV=<ip> ./tools/debloat/6-parear-bluetooth.sh` (liga a tela de fábrica só durante o pareamento) | Sim, e desfaz |
 | Desfazer um | `TV=<ip> ./tools/debloat/9-reverter.sh <pacote>` | Religa |
 
 O `2-aplicar.sh` recusa, mesmo que esteja no perfil: a lista `PROTECTED` do Free My TV, peças do Android, serviços do
