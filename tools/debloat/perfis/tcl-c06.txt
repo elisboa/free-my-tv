@@ -1,6 +1,14 @@
-# TCL C06 (Android TV 11, build AR2101, 918 MB). Testado em 25/10/2026: boot, Wi-Fi, TV aberta e 3 HDMI ok.
-# Um pacote por linha; '#' comenta. O Free My TV já desliga a lista da TCL do HomeMode.DEBLOAT, e mais:
-# tvlauncher, backdrop, tvrecommendations, Google TV (videos), Stan e Rakuten TV.
+# TCL C06 (Android TV 11, build AR2101, software V8-T221T05-LF1V355, 918 MB).
+# Testado em 25/10/2026 (boot, Wi-Fi, TV aberta e 3 HDMI ok) e de novo em 09/11/2026, após restauração de fábrica:
+# com o Free My TV e este perfil, o modo de espera (STR) entra e sai sem reiniciar.
+# Um pacote por linha; '#' comenta. O Free My TV já desliga a lista da TCL do HomeMode.DEBLOAT, a tela inicial
+# (tvlauncher), tvrecommendations e backdrop. Stan e Rakuten TV já vêm desligados de fábrica.
+#
+# Notas desta TV:
+# - Parear Bluetooth novo (controle, teclado): troque para o Original antes. Com o serviço de teclas do Free My TV
+#   ativo, o OK do controle remoto não confirma a janela de pareamento. Pareado, volte ao Free My TV.
+# - Para conferir o modo de espera: Power, 1 min, ligar; `uptime` deve continuar subindo e
+#   `getprop persist.tcl.totalstrtimes` aumentar. Uptime de 0-2 min = a TV reiniciou em vez de acordar.
 
 # --- Seguros: promo, telemetria ou recurso sem uso numa TV
 android.autoinstalls.config.tcl.device   # Play Auto Install: empurra apps "recomendados" da TCL pela Play Store

@@ -15,6 +15,8 @@ Cada TV tem um **perfil** em `perfis/` (a marca e o modelo ficam no perfil, não
 | 3. Aplicar | `TV=<ip> ./tools/debloat/2-aplicar.sh perfis/<perfil>.txt --valer` | Sim (`pm disable-user`, reversível) |
 | 4. Testar | `TV=<ip> ./tools/debloat/3-testar.sh` | Reinicia |
 | Desfazer tudo | `TV=<ip> ./tools/debloat/9-reverter.sh` | Religa |
+| Diagnosticar entrada | `TV=<ip> ./tools/debloat/4-diagnostico-entrada.sh` (teclado, controle, Bluetooth) | Não |
+| Diagnosticar USB | `TV=<ip> ./tools/debloat/5-diagnostico-usb.sh` (porta por porta) | Não |
 | Desfazer um | `TV=<ip> ./tools/debloat/9-reverter.sh <pacote>` | Religa |
 
 O `2-aplicar.sh` recusa, mesmo que esteja no perfil: a lista `PROTECTED` do Free My TV, peças do Android, serviços do
@@ -25,7 +27,7 @@ Perfis:
 
 | Perfil | TV | Testado |
 |---|---|---|
-| [`tcl-c06.txt`](perfis/tcl-c06.txt) | TCL C06, Android TV 11 (AR2101), 1 GB | 25/10/2026 |
+| [`tcl-c06.txt`](perfis/tcl-c06.txt) | TCL C06, Android TV 11 (AR2101), 1 GB | 25/10/2026, 09/11/2026 |
 
 Depois de mudar um perfil, teste um pacote por vez: imagem, som, cada HDMI, TV aberta, controle, Wi-Fi e Play Store.
 Bons candidatos a valer para toda TV da marca merecem ir para o `HomeMode.DEBLOAT` do upstream, com um PR.
